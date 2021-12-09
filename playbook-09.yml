@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache and make sure Vim is installed
+      yum:
+        name: vim
+        update_cache: yes
+
+
+        # Automating the installation of required system packages (installing vim package)

@@ -1,0 +1,22 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache
+      yum:
+        update_cache: yes
+
+
+# Run command in extended permission sudo / become : yes mean chnage permission to root
+
+
+
+# for ubuntu / run command in extended permission (sudo)
+
+# ---
+# - hosts: all
+#   become: yes
+#   tasks:
+#     - name: Update apt cache
+#       yum:
+#         update_cache: yes

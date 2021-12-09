@@ -1,0 +1,3 @@
+#CLI command to to get information about the server with filter on - (run in cli)
+ansible all -m setup
+ansible all -m setup -a "filter=*ipv4*"
